@@ -84,7 +84,7 @@ H264or5VideoStreamFramer
     ? new H264or5VideoStreamParser(hNumber, this, inputSource, includeStartCodeInOutput)
     : NULL;
   fNextPresentationTime = fPresentationTimeBase;
-  fFrameRate = 25.0; // We assume a frame rate of 25 fps, unless we learn otherwise (from parsing a VPS or SPS NAL unit)
+  fFrameRate = 30.0; // We assume a frame rate of 25 fps, unless we learn otherwise (from parsing a VPS or SPS NAL unit)
 }
 
 H264or5VideoStreamFramer::~H264or5VideoStreamFramer() {
